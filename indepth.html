@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/assets/styles/styles.css" type="text/css" />
+
+    <!-- Font Awesome 6 Free CDN -->
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+
+    <title>Indepth | Nature's Paradise</title></head
+  ><!-- InDepth.html (after <head> and navbar/modals) -->
+
+  <!-- Hero Section -->
+  <header
+    class="jumbotron jumbotron-fluid text-white"
+    style="background: url('forest-depth.jpg') center/cover no-repeat"
+  >
+    <div class="container text-center py-5">
+      <h1 class="display-4 text-dark">🌲 Into the Depths of Nature</h1>
+      <p class="lead text-success">
+        Explore in-depth insights about natural ecosystems and their mysteries
+      </p>
+    </div>
+  </header>
+
+  <!-- Detailed Articles Section -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">📝 Featured Articles</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="rainforest.jpeg" class="card-img-top" alt="Rainforest" />
+          <div class="card-body">
+            <h5 class="card-title">Rainforests: Lungs of the Earth</h5>
+            <p class="card-text">
+              Rainforests produce 20% of the world’s oxygen and host diverse
+              species. Learn how they're threatened and how we can protect them.
+            </p>
+            <a href="#" class="btn btn-success">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="ocean.jpg" class="card-img-top" alt="Ocean" />
+          <div class="card-body">
+            <h5 class="card-title">Ocean Currents & Climate</h5>
+            <p class="card-text">
+              Dive into how deep-sea currents influence weather patterns and
+              global temperatures—critical for climate balance.
+            </p>
+            <a href="#" class="btn btn-primary">Discover</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nature Timeline Section -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">🌿 Timeline of Earth’s Evolution</h2>
+      <ul class="timeline">
+        <li><strong>4.5 Billion Years Ago</strong>: Earth forms</li>
+        <li>
+          <strong>3.5 Billion Years Ago</strong>: First signs of microbial life
+        </li>
+        <li>
+          <strong>541 Million Years Ago</strong>: Cambrian Explosion – sudden
+          increase in biodiversity
+        </li>
+        <li><strong>65 Million Years Ago</strong>: Dinosaurs go extinct</li>
+        <li>
+          <strong>Present Day</strong>: Human impact & conservation efforts
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Embedded Nature Video -->
+  <section class="container text-center my-5">
+    <h2 class="mb-4">🎥 A Glimpse Into the Wild</h2>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe
+        class="embed-responsive-item"
+        src="https://www.youtube.com/embed/B6uuIHpFkuo"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- Nature Fact Rotator -->
+  <section class="text-center py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="mb-4">🌎 Did You Know?</h2>
+      <div id="deepFacts" class="font-italic h5">
+        Mangroves protect coastlines from erosion and flooding.
+      </div>
+    </div>
+  </section>
+  <script>
+    const deepFacts = [
+      "Mangroves protect coastlines from erosion and flooding.",
+      "Coral reefs support 25% of marine life.",
+      "Antarctica holds 90% of the world’s freshwater as ice.",
+      "Soil is home to more organisms than above-ground ecosystems.",
+      "Trees communicate via underground fungal networks (mycorrhizae).",
+    ];
+    let f = 0;
+    setInterval(() => {
+      document.getElementById("deepFacts").innerText =
+        deepFacts[f % deepFacts.length];
+      f++;
+    }, 4000);
+  </script>
+
+  <!-- Call to Action -->
+  <section class="container text-center my-5">
+    <h2>🌐 Learn More & Act</h2>
+    <p class="lead">
+      Your curiosity can lead to conservation. Join hands for a sustainable
+      future.
+    </p>
+    <a href="/contact.html" class="btn btn-outline-success btn-lg"
+      >Join the Movement</a
+    >
+  </section>
+<div class="text-center mt-5 py-2">
+        <a href="index.html" class="btn btn-outline-info btn-lg"
+          >⬅️ Back to Home</a
+        >
+      </div>
+    </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3">
+    <p>&copy; 2025 nat.Paradise | Deep Nature Explorations 🌱</p>
+  </footer>
+</html>

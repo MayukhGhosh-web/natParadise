@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/assets/styles/styles.css" type="text/css" />
+
+    <!-- Font Awesome 6 Free CDN -->
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+
+    <title> tech & nature | Nature's Paradise </title>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <header
+      class="jumbotron jumbotron-fluid text-white"
+      style="background: url('tech-nature.jpg') center/cover no-repeat"
+    >
+      <div class="container text-center py-5">
+        <h1 class="display-4 font-weight-bold">🌿 Nature Meets Technology</h1>
+        <p class="lead">
+          Discover innovations that protect and preserve the environment
+        </p>
+      </div>
+    </header>
+
+    <!-- Green Technology Highlights -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">🌍 Eco-Friendly Innovations</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <img
+            src="solar.jpg"
+            alt="Solar Panels"
+            class="img-fluid rounded mb-3"
+          />
+          <h5>Solar Energy</h5>
+          <p>
+            Harnessing the power of the sun to reduce fossil fuel use and power
+            homes cleanly.
+          </p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img
+            src="vertical-farm.jpg"
+            alt="Vertical Farming"
+            class="img-fluid rounded mb-3"
+          />
+          <h5>Vertical Farming</h5>
+          <p>
+            Technology meets agriculture—growing crops in urban buildings using
+            minimal space and water.
+          </p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img
+            src="electric-car.jpg"
+            alt="Electric Cars"
+            class="img-fluid rounded mb-3"
+          />
+          <h5>Electric Vehicles</h5>
+          <p>
+            Replacing petrol and diesel with clean, silent electric mobility
+            solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Quiz -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">🤔 Quick Tech & Nature Quiz</h2>
+        <form>
+          <div class="form-group">
+            <label
+              ><strong
+                >1. Which of these is a renewable energy source?</strong
+              ></label
+            ><br />
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q1" />
+              <label class="form-check-label">Coal</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q1" />
+              <label class="form-check-label">Wind</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q1" />
+              <label class="form-check-label">Diesel</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label><strong>2. What does 'EV' stand for?</strong></label
+            ><br />
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" />
+              <label class="form-check-label">Electric Van</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" />
+              <label class="form-check-label">Electric Vehicle</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" />
+              <label class="form-check-label">Eco Vibration</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Tech Quote Rotator -->
+    <section class="text-center py-5 bg-dark text-white">
+      <div class="container">
+        <h2 class="mb-4">💬 Tech Facts</h2>
+        <div id="techFacts" class="font-italic h5">
+          Technology is a key to sustainable living.
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const facts = [
+        "🌞 Solar power is the most abundant energy source on Earth.",
+        "🚗 EVs produce 50% less emissions than gas-powered cars.",
+        "🌱 Drones are used to plant thousands of trees per day.",
+        "💧 Smart irrigation saves over 30% of water in agriculture.",
+        "🔋 Battery tech is rapidly evolving for cleaner energy storage.",
+      ];
+      let i = 0;
+      setInterval(() => {
+        document.getElementById("techFacts").innerText =
+          facts[i % facts.length];
+        i++;
+      }, 3000);
+    </script>
+
+    <!-- Call to Action -->
+    <section class="container text-center my-5">
+      <h2>🌐 Be a Part of the Green Tech Movement</h2>
+      <p class="lead">
+        Stay informed, get involved, and help spread sustainable innovation.
+      </p>
+      <a href="/contact.html" class="btn btn-outline-primary btn-lg"
+        >Contact Us to Collaborate</a
+      >
+    </section>
+<div class="text-center mt-5 py-3">
+        <a href="index.html" class="btn btn-outline-success btn-lg"
+          >⬅️ Back to Home</a
+        >
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+      <p>&copy; 2025 nat.Paradise | Designed with 🌿 by Nature Lovers</p>
+    </footer>
+  </body>
+</html>
